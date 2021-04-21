@@ -10,18 +10,6 @@ import {
   View,
 } from '@react-pdf/renderer'
 
-function Component1() {
-  return (
-    <View>
-      <Text>Component1</Text>
-    </View>
-  )
-}
-
-const components = {
-  c1: Component1,
-}
-
 const image =
   'https://images.unsplash.com/photo-1505821640787-5ab759faaac2?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=619&q=80'
 
@@ -31,7 +19,6 @@ function MyDocument() {
   return (
     <Document>
       <Page size="A4" style={{ padding: 8 }}>
-        <ComponentToRender />
         <View
           style={{
             alignItems: 'center',
@@ -60,7 +47,6 @@ function MyDocument() {
             Brand Name
           </Text>
         </View>
-
         <View
           style={{
             flexDirection: 'row',
